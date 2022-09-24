@@ -1,0 +1,105 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    background: #737a7b;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    border: none;
+    padding: 5px 10px;
+}
+.contenedor-buscador{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    margin-top:60px;
+}
+.lienzo{
+    color: #fff;
+    width: 300px;
+    background: rgb(74,94,198);
+    background: linear-gradient(180deg, rgba(74,94,198,0.9759862778730704) 0%, rgba(141,171,251,0.9639794168096055) 35%, rgba(241,247,247,0.9502572898799314) 100%);
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px -1px rgba(255, 255, 255, 0.206);
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(255, 255, 255, 0.194);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(255, 255, 255, 0.221);
+}
+ul{
+    list-style: none;
+}
+li{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.294);
+    
+}
+li:first-child{
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 15px 15px 0px 0px;
+    
+}
+li:last-child{
+    border-bottom: none;
+}
+.header{
+    padding: 10px;
+}
+.header>p{
+    margin-top:5px;
+}
+.temp-actual{
+    padding: 10px;
+    font-size: 60px;
+}
+.descripcion>p{
+    text-align: left;
+    font-size:18px ;
+    padding:30px 10px;
+}
+.temp{
+    
+    font-size:18px ;
+    padding:10px 10px;
+}
+.temp>p{
+    margin:10px 0;
+}
+.humedad{
+    text-align: left;
+    font-size:18px ;
+    padding:30px 10px;
+}
+
+
+
+
+
