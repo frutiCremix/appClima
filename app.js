@@ -9,20 +9,18 @@ let data;
 let kelvinCelsius=-273.15;
 
 btn.addEventListener('click',(e)=>{
-    let query=input.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=78b363136e11e3ef40c3455405e1a6d8&lang=es`)
-    .then(r=>r.json())
-    .then(r=>{
-        data=r;
-    });
+    
    
        dibujar();
 });
 
 
-function dibujar(){
+async function dibujar(){
+    let query=input.value;
+    console.log(`buscando...${query} `);
+    let respuesta= await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=78b363136e11e3ef40c3455405e1a6d8&lang=es`)
+    let data=await respuesta.json()
     
-    setTimeout(function(){
         console.log(data);
         lienzo.innerHTML=`
         <div class="contenedor"id="lienzo">
@@ -50,7 +48,7 @@ function dibujar(){
             </div>
         </li>
         </ul>
-        </div>`
-        },1000);
+        </div>`;
+        
 }
 
